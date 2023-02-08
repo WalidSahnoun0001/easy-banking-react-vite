@@ -1,0 +1,98 @@
+header {
+    padding: 10px 0;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+}
+header .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+header .header-box .menu-btn {
+    display: none;
+}
+header .header-box nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+header .header-box nav ul li a {
+    text-decoration: none;
+    color: hsl(233, 26%, 24%);
+    font-size: 14px;
+    padding-bottom: 17px;
+}
+header .header-box h2 {
+    height: 25px;
+}
+header .header-box nav ul li a:hover {
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+}
+header .request-invite button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+header .request-invite button:hover {
+    background-image: linear-gradient(to right, hsla(136, 65%, 51%, 0.499), hsla(192, 70%, 51%, 0.466));
+}
+
+/* Small Screen */
+
+@media (max-width: 575.98px) {
+    header .header-box .menu-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    nav.opened {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 100%;
+        margin-top: 25px;
+        padding: 25px 0;
+        border-radius: 5px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .request-invite {
+        display: none;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header .header-box .menu-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    nav.opened {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 100%;
+        margin-top: 25px;
+        padding: 25px 0;
+        border-radius: 5px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    header .request-invite {
+        display: none;
+    }
+}
